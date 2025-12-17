@@ -1,45 +1,105 @@
+
 # SciSciNet Backend
 
-Backend API for SciSciNet visualization project using UCSD CS papers data from OpenAlex.
+Backend service for **SciSciNet**, a research network visualization system built on
+publication metadata from **OpenAlex**.
+
+This backend is responsible for **data acquisition, preprocessing, network construction,
+and API delivery**, supporting interactive exploration of academic collaboration and
+citation patterns in the frontend.
+
+---
+
+## Overview
+
+The backend implements a complete data pipeline for research network visualization:
+
+1. **Data Collection**
+   - Downloads publication metadata from OpenAlex
+   - Filters papers affiliated with **University of California, San Diego**
+   - Focuses on the **Computer Science** field
+
+2. **Data Processing & Network Construction**
+   - Builds an **author collaboration network** based on co-authorship
+   - Builds a **paper citation network** based on internal references
+   - Normalizes data into JSON structures optimized for D3-based visualization
+
+3. **API Service**
+   - Exposes processed networks through a Flask REST API
+   - Serves summary statistics and metadata for dashboards and interaction
+
+This backend is designed to be modular and extensible, allowing additional institutions,
+time ranges, or network types to be added with minimal changes.
+
+---
 
 ## Project Structure
 
 ```
+
 sciscinet-p1-backend/
 ├── app.py                          # Flask API server
 ├── requirements.txt                # Python dependencies
-├── README.md                       # This file
+├── README.md                       # Project documentation
 └── scripts/
-    ├── download_data.py           # Download data from OpenAlex API
-    ├── build_author_network.py    # Build author collaboration network
-    ├── build_citation_network.py  # Build paper citation network
-    └── data/
-        ├── raw/                   # Raw data from OpenAlex
-        │   └── ucsd_papers.json
-        └── processed/             # Processed data
-            ├── papers.csv
-            ├── authors.csv
-            ├── paper_author_affiliations.csv
-            ├── paper_references.csv
-            ├── author_network.json
-            └── citation_network.json
-```
+├── download_data.py            # Fetch data from OpenAlex API
+├── build_author_network.py     # Construct author collaboration graph
+├── build_citation_network.py   # Construct paper citation graph
+└── data/
+├── raw/                    # Raw OpenAlex responses
+│   └── ucsd_papers.json
+└── processed/              # Processed datasets for serving
+├── papers.csv
+├── authors.csv
+├── paper_author_affiliations.csv
+├── paper_references.csv
+├── author_network.json
+└── citation_network.json
+
+````
+
+---
+
+## Data Pipeline
+
+### Data Source
+- **Provider**: OpenAlex
+- **Institution**: University of California, San Diego
+- **Field**: Computer Science
+- **Time Range**: 2020–2025
+
+### Processing Steps
+- Retrieve publication metadata from OpenAlex
+- Extract paper-level attributes (title, year, citation count)
+- Resolve author identities and affiliations
+- Construct:
+  - Author collaboration edges weighted by co-authorship frequency
+  - Paper citation edges representing internal references
+- Export intermediate CSV files for transparency and debugging
+- Export final network representations as JSON for API serving
+
+---
 
 ## Setup
 
-### 1. Install Dependencies
+### Prerequisites
+- Python 3.9+
+- Virtual environment recommended
+
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
-```
+````
 
-### 2. Download and Process Data
+---
+
+## Data Preparation
 
 ```bash
-# Navigate to scripts directory
 cd scripts
 
-# Download data from OpenAlex (this will take a few minutes)
+# Download raw data from OpenAlex
 python download_data.py
 
 # Build author collaboration network
@@ -48,186 +108,125 @@ python build_author_network.py
 # Build paper citation network
 python build_citation_network.py
 
-# Return to root directory
 cd ..
 ```
+
+> Note: Downloading data from OpenAlex may take several minutes depending on network conditions.
+
+---
 
 ## Running the API Server
 
 ```bash
-# Start the Flask server
 python app.py
 ```
 
-The server will start on `http://localhost:5001`
+The server starts at:
+
+```
+http://localhost:5001
+```
+
+CORS is enabled to support local frontend development.
+
+---
 
 ## API Endpoints
 
-### 1. Home
-- **GET** `/`
-- Returns API information and available endpoints
+### Base
 
-### 2. Author Collaboration Network
-- **GET** `/api/author-network`
-- Returns the author collaboration network data (nodes and links)
-- Response format:
+* **GET** `/`
+* Returns service status and available endpoints
+
+---
+
+### Author Collaboration Network
+
+* **GET** `/api/author-network`
+* Returns a node-link representation of co-authorship relationships
+
 ```json
 {
   "nodes": [
-    {"id": "123", "name": "Author Name", "paperCount": 5}
+    { "id": "A123", "name": "Author Name", "paperCount": 5 }
   ],
   "links": [
-    {"source": "123", "target": "456", "weight": 2}
+    { "source": "A123", "target": "A456", "weight": 2 }
   ],
-  "metadata": {...}
+  "metadata": { ... }
 }
 ```
 
-### 3. Citation Network
-- **GET** `/api/citation-network`
-- Returns the paper citation network data
-- Response format:
+---
+
+### Paper Citation Network
+
+* **GET** `/api/citation-network`
+* Returns internal citation relationships between papers
+
 ```json
 {
   "nodes": [
-    {"id": "W123", "title": "Paper Title", "year": 2023, "citationCount": 100}
+    { "id": "W123", "title": "Paper Title", "year": 2023, "citationCount": 120 }
   ],
   "links": [
-    {"source": "W123", "target": "W456"}
+    { "source": "W123", "target": "W456" }
   ],
-  "metadata": {...}
+  "metadata": { ... }
 }
 ```
 
-### 4. Papers List
-- **GET** `/api/papers`
-- Returns all papers data
-- Response format:
-```json
-{
-  "total": 1000,
-  "papers": [...]
-}
-```
+---
 
-### 5. Authors List
-- **GET** `/api/authors`
-- Returns all authors data
-- Response format:
-```json
-{
-  "total": 20819,
-  "authors": [...]
-}
-```
+### Statistics
 
-### 6. Statistics
-- **GET** `/api/stats`
-- Returns network statistics
-- Response format:
-```json
-{
-  "author_network": {
-    "nodes": 1134,
-    "links": 36623,
-    "metadata": {...}
-  },
-  "citation_network": {
-    "nodes": 69,
-    "links": 14,
-    "metadata": {...}
-  }
-}
-```
+* **GET** `/api/stats`
+* Returns summary statistics for all networks
 
-### 7. Health Check
-- **GET** `/health`
-- Returns server health status
+---
 
-## Data Processing Details
+### Health Check
 
-### Data Source
-- **Dataset**: OpenAlex (SciSciNet)
-- **Institution**: UC San Diego
-- **Field**: Computer Science
-- **Time Range**: 2020-2025
-- **Total Papers**: 1000 (downloaded)
-- **CS Papers**: 69 (filtered)
+* **GET** `/health`
+* Returns server health status
 
-### Network Statistics
+---
 
-**Author Collaboration Network:**
-- Nodes: 1,134 authors
-- Links: 36,623 collaborations
-- Average collaborations per pair: 1.16
-- Most prolific author: 3 papers
+## Network Statistics (Current Dataset)
 
-**Citation Network:**
-- Nodes: 69 papers
-- Links: 14 citations (internal)
-- Average citations per paper: 645.65
-- Most cited paper: 5,934 citations
+**Author Collaboration Network**
 
-## Development
+* Authors: 1,134
+* Collaboration edges: 36,623
+* Average collaborations per author pair: 1.16
 
-### Adding New Endpoints
+**Citation Network**
 
-Edit `app.py` and add new routes:
+* Papers: 69
+* Internal citation links: 14
+* Average citation count per paper: 645+
 
-```python
-@app.route('/api/your-endpoint')
-def your_function():
-    # Your code here
-    return jsonify(data)
-```
+---
 
-### CORS Configuration
+## Development Notes
 
-Currently allows all origins. For production, modify in `app.py`:
+* API responses are optimized for D3-based visualization
+* CSV intermediates are retained for debugging and extensibility
+* The data pipeline is modular and can be adapted to other institutions
+  or research domains with minimal refactoring
 
-```python
-CORS(app, origins=['http://localhost:3000'])  # Your frontend URL
-```
-
-## Testing
-
-```bash
-# Test the API
-curl http://localhost:5001/
-curl http://localhost:5001/api/stats
-curl http://localhost:5001/api/author-network
-```
-
-## Troubleshooting
-
-### Port Already in Use
-```bash
-# Kill process on port 5001
-lsof -ti:5001 | xargs kill -9
-```
-
-### Data Files Not Found
-Make sure you've run the data processing scripts:
-```bash
-cd scripts
-python download_data.py
-python build_author_network.py
-python build_citation_network.py
-```
-
-### Import Errors
-Install all dependencies:
-```bash
-pip install -r requirements.txt
-```
+---
 
 ## Author
 
-Carol Zhang - UCSD MS in Computer Science
+**Carol Zhang**
+M.S. in Computer Science, UC San Diego
 
-## Assignment
+---
 
-This is Project 1 (Full-Stack Web Development) for the coding test.
-- Task 1 (T1): Create interactive node-link graphs
-- Task 2 (T2): Create coordinated dashboards
-- Task 3 (T3): Refine network with edge bundling
+## License
+
+This project was developed as part of a **technical coding test** and is intended
+for evaluation and demonstration purposes.
+
+```
