@@ -1,0 +1,481 @@
+{
+  "nodes": [
+    {
+      "id": "W2963002078",
+      "title": "Review of Particle Physics",
+      "year": 2022,
+      "citationCount": 5934
+    },
+    {
+      "id": "W3022285953",
+      "title": "A SARS-CoV-2 protein interaction map reveals targets for drug repurposing",
+      "year": 2020,
+      "citationCount": 4709
+    },
+    {
+      "id": "W4200150166",
+      "title": "NeRF",
+      "year": 2021,
+      "citationCount": 4544
+    },
+    {
+      "id": "W3110151578",
+      "title": "Parameterizing neural power spectra into periodic and aperiodic components",
+      "year": 2020,
+      "citationCount": 2005
+    },
+    {
+      "id": "W4401211033",
+      "title": "Review of Particle Physics",
+      "year": 2024,
+      "citationCount": 1817
+    },
+    {
+      "id": "W3080789666",
+      "title": "Feature-based molecular networking in the GNPS analysis environment",
+      "year": 2020,
+      "citationCount": 1320
+    },
+    {
+      "id": "W4323653529",
+      "title": "Technology Roadmap for Flexible Sensors",
+      "year": 2023,
+      "citationCount": 1013
+    },
+    {
+      "id": "W3009555114",
+      "title": "Conscious Processing and the Global Neuronal Workspace Hypothesis",
+      "year": 2020,
+      "citationCount": 999
+    },
+    {
+      "id": "W4308834828",
+      "title": "The ProteomeXchange consortium at 10 years: 2023 update",
+      "year": 2022,
+      "citationCount": 716
+    },
+    {
+      "id": "W4292121737",
+      "title": "A compute-in-memory chip based on resistive random-access memory",
+      "year": 2022,
+      "citationCount": 672
+    },
+    {
+      "id": "W4310135808",
+      "title": "A universal graph deep learning interatomic potential for the periodic table",
+      "year": 2022,
+      "citationCount": 656
+    },
+    {
+      "id": "W3204859697",
+      "title": "MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo",
+      "year": 2021,
+      "citationCount": 642
+    },
+    {
+      "id": "W3189411510",
+      "title": "Unbox the black-box for the medical explainable AI via multi-modal and multi-centre data fusion: A mini-review, two showcases and beyond",
+      "year": 2021,
+      "citationCount": 636
+    },
+    {
+      "id": "W2480498986",
+      "title": "Advances in Cryptology \u2013 CRYPTO 2020",
+      "year": 2020,
+      "citationCount": 629
+    },
+    {
+      "id": "W3200840849",
+      "title": "Federated learning for predicting clinical outcomes in patients with COVID-19",
+      "year": 2021,
+      "citationCount": 611
+    },
+    {
+      "id": "W4387321091",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "year": 2023,
+      "citationCount": 604
+    },
+    {
+      "id": "W3003490096",
+      "title": "UA-DETRAC: A new benchmark and protocol for multi-object detection and tracking",
+      "year": 2020,
+      "citationCount": 594
+    },
+    {
+      "id": "W2996931760",
+      "title": "Time Interval Aware Self-Attention for Sequential Recommendation",
+      "year": 2020,
+      "citationCount": 556
+    },
+    {
+      "id": "W1593443060",
+      "title": "Numerical Linear Algebra and Optimization",
+      "year": 2021,
+      "citationCount": 505
+    },
+    {
+      "id": "W3039533824",
+      "title": "Exploiting chemistry and molecular systems for quantum information science",
+      "year": 2020,
+      "citationCount": 502
+    },
+    {
+      "id": "W2969894439",
+      "title": "Measurement-induced criticality in random quantum circuits",
+      "year": 2020,
+      "citationCount": 462
+    },
+    {
+      "id": "W3094540299",
+      "title": "Predicting Drug Response and Synergy Using a Deep Learning Model of Human Cancer Cells",
+      "year": 2020,
+      "citationCount": 456
+    },
+    {
+      "id": "W3093142758",
+      "title": "The Geometry of Abstraction in the Hippocampus and Prefrontal Cortex",
+      "year": 2020,
+      "citationCount": 455
+    },
+    {
+      "id": "W3012652877",
+      "title": "A SARS-CoV-2-Human Protein-Protein Interaction Map Reveals Drug Targets and Potential Drug-Repurposing",
+      "year": 2020,
+      "citationCount": 452
+    },
+    {
+      "id": "W3065141030",
+      "title": "Virus-Receptor Interactions of Glycosylated SARS-CoV-2 Spike and Human ACE2 Receptor",
+      "year": 2020,
+      "citationCount": 450
+    },
+    {
+      "id": "W3017243633",
+      "title": "Sample-Efficient Deep Learning for COVID-19 Diagnosis Based on CT Scans",
+      "year": 2020,
+      "citationCount": 446
+    },
+    {
+      "id": "W3014623960",
+      "title": "Changing Design Education for the 21st Century",
+      "year": 2020,
+      "citationCount": 443
+    },
+    {
+      "id": "W3216656735",
+      "title": "Reinforcement Learning in Healthcare: A Survey",
+      "year": 2021,
+      "citationCount": 432
+    },
+    {
+      "id": "W3046468150",
+      "title": "The <scp>Bio3D</scp> packages for structural bioinformatics",
+      "year": 2020,
+      "citationCount": 430
+    },
+    {
+      "id": "W3206742358",
+      "title": "NPClassifier: A Deep Neural Network-Based Structural Classification Tool for Natural Products",
+      "year": 2021,
+      "citationCount": 406
+    },
+    {
+      "id": "W3007453563",
+      "title": "A tutorial on calibration measurements and calibration models for clinical prediction models",
+      "year": 2020,
+      "citationCount": 377
+    },
+    {
+      "id": "W3195862557",
+      "title": "2022 Roadmap on integrated quantum photonics",
+      "year": 2022,
+      "citationCount": 366
+    },
+    {
+      "id": "W3024722698",
+      "title": "The TRUST Principles for digital repositories",
+      "year": 2020,
+      "citationCount": 365
+    },
+    {
+      "id": "W3127924821",
+      "title": "Artificial Intelligence for Mental Health Care: Clinical Applications, Barriers, Facilitators, and Artificial Wisdom",
+      "year": 2021,
+      "citationCount": 362
+    },
+    {
+      "id": "W3004368638",
+      "title": "The unreasonable effectiveness of deep learning in artificial intelligence",
+      "year": 2020,
+      "citationCount": 345
+    },
+    {
+      "id": "W3034564916",
+      "title": "Deep Stereo Using Adaptive Thin Volume Representation With Uncertainty Awareness",
+      "year": 2020,
+      "citationCount": 339
+    },
+    {
+      "id": "W4384663317",
+      "title": "Digital health for aging populations",
+      "year": 2023,
+      "citationCount": 338
+    },
+    {
+      "id": "W4224316819",
+      "title": "Intent Contrastive Learning for Sequential Recommendation",
+      "year": 2022,
+      "citationCount": 332
+    },
+    {
+      "id": "W4404658388",
+      "title": "A comprehensive survey on pretrained foundation models: a history from BERT to ChatGPT",
+      "year": 2024,
+      "citationCount": 308
+    },
+    {
+      "id": "W4386607677",
+      "title": "Artificial intelligence for natural product drug discovery",
+      "year": 2023,
+      "citationCount": 291
+    },
+    {
+      "id": "W3093377669",
+      "title": "Finding, visualizing, and quantifying latent structure across diverse animal vocal repertoires",
+      "year": 2020,
+      "citationCount": 285
+    },
+    {
+      "id": "W4290839014",
+      "title": "The All of Us Research Program: Data quality, utility, and diversity",
+      "year": 2022,
+      "citationCount": 284
+    },
+    {
+      "id": "W4372260310",
+      "title": "Large-Scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation",
+      "year": 2023,
+      "citationCount": 280
+    },
+    {
+      "id": "W3037414627",
+      "title": "Breast mass segmentation in ultrasound with selective kernel U-Net convolutional neural network",
+      "year": 2020,
+      "citationCount": 278
+    },
+    {
+      "id": "W3182944339",
+      "title": "Methodological considerations for studying neural oscillations",
+      "year": 2021,
+      "citationCount": 275
+    },
+    {
+      "id": "W3110608229",
+      "title": "A Broader Study of Cross-Domain Few-Shot Learning",
+      "year": 2020,
+      "citationCount": 269
+    },
+    {
+      "id": "W3176892444",
+      "title": "Pose Recognition with Cascade Transformers",
+      "year": 2021,
+      "citationCount": 263
+    },
+    {
+      "id": "W3134427152",
+      "title": "Machine Learning for Social Science: An Agnostic Approach",
+      "year": 2021,
+      "citationCount": 262
+    },
+    {
+      "id": "W3025773901",
+      "title": "Synaptic Plasticity Dynamics for Deep Continuous Local Learning (DECOLLE)",
+      "year": 2020,
+      "citationCount": 261
+    },
+    {
+      "id": "W4362659486",
+      "title": "Grounded Copilot: How Programmers Interact with Code-Generating Models",
+      "year": 2023,
+      "citationCount": 261
+    },
+    {
+      "id": "W3090156323",
+      "title": "Identifying key factors for improving ICA\u2010based decomposition of EEG data in mobile and stationary experiments",
+      "year": 2020,
+      "citationCount": 248
+    },
+    {
+      "id": "W3206878019",
+      "title": "High-confidence structural annotation of metabolites absent from spectral libraries",
+      "year": 2021,
+      "citationCount": 245
+    },
+    {
+      "id": "W4210242534",
+      "title": "A Neural Network Ensemble With Feature Engineering for Improved Credit Card Fraud Detection",
+      "year": 2022,
+      "citationCount": 244
+    },
+    {
+      "id": "W4220887363",
+      "title": "A review of solar forecasting, its dependence on atmospheric sciences and implications for grid integration: Towards carbon neutrality",
+      "year": 2022,
+      "citationCount": 243
+    },
+    {
+      "id": "W3046577719",
+      "title": "Understanding Operational 5G",
+      "year": 2020,
+      "citationCount": 241
+    },
+    {
+      "id": "W3005602745",
+      "title": "A dynamic high-gain design for prescribed-time regulation of nonlinear systems",
+      "year": 2020,
+      "citationCount": 240
+    },
+    {
+      "id": "W3037882675",
+      "title": "Privacy challenges and research opportunities for genomic data sharing",
+      "year": 2020,
+      "citationCount": 236
+    },
+    {
+      "id": "W4327662982",
+      "title": "A Survey on Active Simultaneous Localization and Mapping: State of the Art and New Frontiers",
+      "year": 2023,
+      "citationCount": 236
+    },
+    {
+      "id": "W3207386406",
+      "title": "Modality-specific tracking of attention and sensory statistics in the human electrophysiological spectral exponent",
+      "year": 2021,
+      "citationCount": 231
+    },
+    {
+      "id": "W4205563072",
+      "title": "Eye Movement and Pupil Measures: A Review",
+      "year": 2022,
+      "citationCount": 230
+    },
+    {
+      "id": "W3035689535",
+      "title": "Inverse Rendering for Complex Indoor Scenes: Shape, Spatially-Varying Lighting and SVBRDF From a Single Image",
+      "year": 2020,
+      "citationCount": 229
+    },
+    {
+      "id": "W4306179830",
+      "title": "SELFIES and the future of molecular string representations",
+      "year": 2022,
+      "citationCount": 228
+    },
+    {
+      "id": "W3092288641",
+      "title": "A Survey of Knowledge-enhanced Text Generation",
+      "year": 2022,
+      "citationCount": 221
+    },
+    {
+      "id": "W3024509612",
+      "title": "Verification of deterministic solar forecasts",
+      "year": 2020,
+      "citationCount": 212
+    },
+    {
+      "id": "W3129114628",
+      "title": "hOCBS: A privacy-preserving blockchain framework for healthcare data leveraging an on-chain and off-chain system design",
+      "year": 2021,
+      "citationCount": 209
+    },
+    {
+      "id": "W3127942813",
+      "title": "Resting state EEG biomarkers of cognitive decline associated with Alzheimer\u2019s disease and mild cognitive impairment",
+      "year": 2021,
+      "citationCount": 208
+    },
+    {
+      "id": "W4214747759",
+      "title": "Identification of SARS-CoV-2 inhibitors targeting Mpro and PLpro using in-cell-protease assay",
+      "year": 2022,
+      "citationCount": 205
+    },
+    {
+      "id": "W4226442948",
+      "title": "HTS-AT: A Hierarchical Token-Semantic Audio Transformer for Sound Classification and Detection",
+      "year": 2022,
+      "citationCount": 205
+    },
+    {
+      "id": "W3012235108",
+      "title": "HEAX",
+      "year": 2020,
+      "citationCount": 202
+    }
+  ],
+  "links": [
+    {
+      "source": "W3204859697",
+      "target": "W3034564916"
+    },
+    {
+      "source": "W3206742358",
+      "target": "W3206878019"
+    },
+    {
+      "source": "W4386607677",
+      "target": "W3206878019"
+    },
+    {
+      "source": "W4386607677",
+      "target": "W3206742358"
+    },
+    {
+      "source": "W3093377669",
+      "target": "W3093377669"
+    },
+    {
+      "source": "W4372260310",
+      "target": "W4226442948"
+    },
+    {
+      "source": "W3182944339",
+      "target": "W3110151578"
+    },
+    {
+      "source": "W3182944339",
+      "target": "W3207386406"
+    },
+    {
+      "source": "W3025773901",
+      "target": "W3025773901"
+    },
+    {
+      "source": "W3206878019",
+      "target": "W3080789666"
+    },
+    {
+      "source": "W4220887363",
+      "target": "W3024509612"
+    },
+    {
+      "source": "W3207386406",
+      "target": "W3110151578"
+    },
+    {
+      "source": "W3207386406",
+      "target": "W3207386406"
+    },
+    {
+      "source": "W4214747759",
+      "target": "W3022285953"
+    }
+  ],
+  "metadata": {
+    "total_papers": 69,
+    "total_citations": 14,
+    "year_range": "2020-2024"
+  }
+}
