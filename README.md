@@ -229,4 +229,3 @@ M.S. in Computer Science, UC San Diego
 This project was developed as part of a **technical coding test** and is intended
 for evaluation and demonstration purposes.
 
-```
