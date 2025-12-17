@@ -59,7 +59,7 @@ cd ..
 python app.py
 ```
 
-The server will start on `http://localhost:5000`
+The server will start on `http://localhost:5001`
 
 ## API Endpoints
 
@@ -193,17 +193,17 @@ CORS(app, origins=['http://localhost:3000'])  # Your frontend URL
 
 ```bash
 # Test the API
-curl http://localhost:5000/
-curl http://localhost:5000/api/stats
-curl http://localhost:5000/api/author-network
+curl http://localhost:5001/
+curl http://localhost:5001/api/stats
+curl http://localhost:5001/api/author-network
 ```
 
 ## Troubleshooting
 
 ### Port Already in Use
 ```bash
-# Kill process on port 5000
-lsof -ti:5000 | xargs kill -9
+# Kill process on port 5001
+lsof -ti:5001 | xargs kill -9
 ```
 
 ### Data Files Not Found
