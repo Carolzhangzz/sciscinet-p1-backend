@@ -1,4 +1,3 @@
-
 # SciSciNet Backend
 
 Backend service for **SciSciNet**, a research network visualization system built on
